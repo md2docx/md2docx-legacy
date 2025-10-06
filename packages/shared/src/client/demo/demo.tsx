@@ -1,6 +1,6 @@
 "use client";
 
-import { emojiPlugin } from "@m2d/emoji";
+import { md2docxPlugin } from "@m2d/md2docx";
 // import { remarkDocx } from "@m2d/remark-docx";
 import { toDocx } from "mdast2docx";
 import {
@@ -53,7 +53,7 @@ export function Demo() {
           tablePlugin(),
           listPlugin(),
           mathPlugin(),
-          emojiPlugin(),
+          md2docxPlugin(),
           imagePlugin(),
         ],
       },

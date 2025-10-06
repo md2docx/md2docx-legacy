@@ -54,7 +54,6 @@ jobs:
       - name: Generate/update docs
         run: |
           pnpm doc && pnpm format
-          echo "$(git rev-parse HEAD)" > .md2doc-template.lst
       - name: Save docs back to repo
         run: git add . && git commit -m "upgrade deps && docs [skip ci]" && git push origin main
       - name: Update website

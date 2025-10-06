@@ -4,7 +4,7 @@ import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import { unified } from "unified";
 import { describe, it, vi } from "vitest";
-import { emojiPlugin } from "../src";
+import { md2docxPlugin } from "../src";
 
 const markdown = fs.readFileSync("../sample.md", "utf-8");
 
@@ -17,11 +17,11 @@ describe.concurrent("toDocx", () => {
   /**
    * Intentionally combining two tests in one as docx generation could be resource consuming, especially for very large files.
    */
-  it("should handle emoji and should not have any console.log", async ({
+  it("should handle md2docx and should not have any console.log", async ({
     expect,
   }) => {
     const consoleSpy = vi.spyOn(console, "log");
-    const docxBlob = await toDocx(mdast, {}, { plugins: [emojiPlugin()] });
+    const docxBlob = await toDocx(mdast, {}, { plugins: [md2docxPlugin()] });
     expect(consoleSpy).not.toHaveBeenCalled();
     expect(docxBlob).toBeInstanceOf(Blob);
   });

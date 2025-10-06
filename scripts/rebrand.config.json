@@ -1,6 +1,6 @@
 {
-  "packageName": "@m2d/emoji",
+  "packageName": "@m2d/md2docx",
   "owner": "md2docx",
-  "repo": "md2docx-plugin-template",
-  "title": "Md2docx Plugin Template"
+  "repo": "md2docx",
+  "title": "@m2d/md2docx"
 }

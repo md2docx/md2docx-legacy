@@ -1,7 +1,7 @@
 /** @type {import('typedoc').TypeDocOptions} */
 module.exports = {
   tsconfig: "tsconfig.docs.json",
-  name: "React18 Loaders",
+  name: "@m2d/md2docx",
   entryPoints: ["./lib/src"],
   exclude: ["**/*.test.*", "**/declaration.d.ts"],
   entryPointStrategy: "Expand",

@@ -38,8 +38,8 @@ jobs:
       - name: Test
         run: pnpm test
         working-directory: ./lib
-      # - name: Copy Readme file
-      # run: cp ./README.md ./lib # will be uncommented while rebranding
+      - name: Copy Readme file
+        run: cp ./README.md ./lib # will be uncommented while rebranding
       - name: Apply changesets, publish and create release, branches and tags
         run: pnpm tsx ./scripts/publish.ts
         env:

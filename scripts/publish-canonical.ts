@@ -8,7 +8,7 @@ if (process.env.NODE_AUTH_TOKEN) {
 }
 
 // Publish canonical packages
-const canonicals: string[] = ["@md2docx/emoji", "@mdast2docx/emoji"];
+const canonicals: string[] = ["@md2docx/md2docx", "@mdast2docx/md2docx"];
 
 canonicals.forEach((pkg) => {
   try {
